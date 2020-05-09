@@ -6,7 +6,7 @@ For tracking songs in concerts/compilations
 
 It is developed using `ncurses` and `applescript`
 
-To compile, run `make`
+To compile, run `make`. Make sure you have `ncurses` installed by using `brew install ncurses`.
 
 Features:
 - Click on song/file to play
