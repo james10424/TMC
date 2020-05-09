@@ -476,7 +476,7 @@ int main() {
     void* status;
     pthread_join(t_keypress, &status);
     pthread_cancel(t_progress);
-
+    
     endwin();
     return 0;
 }

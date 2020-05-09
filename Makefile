@@ -1,8 +1,13 @@
 all: TMC
 
+FLAGS = -g -Wall -Werror
+LIBS = -lncurses -lpthread
+
 %.o: %.c
-	gcc -g -c -Werror -Wall $<
+	gcc $(FLAGS) -c $< -o $@
+
 TMC: TMC.o
-	gcc -g -lncurses -lpthread -Werror -Wall TMC.c -o TMC
+	gcc $(FLAGS) $(LIBS) $< -o $@
+
 clean:
 	rm *.o TMC
